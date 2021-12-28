@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AWS IoT Core - MQTT subscription via WS</title>
+    </head>
+    <body>
+        <p>This sample shows how to connect to the AWS IoT Core message broker using MQTT over secure WebSockets (WSS), using temporary credentials granted by Amazon Cognito Identity Pools.</p>
+        <p>Note that this sample uses <em>unauthenticated identities</em>, meaning that no authentication occurs. In a real production application you might want to use authenticated identites instead, optionally usingn a Cognito User Pool as the identity provider.</p>
+        <h2>How to use this</h2>
+        <ol>
+            <li>Open your browser's developer tools and go to the Console tab.</li>
+            <li>Go to the <a href="https://console.aws.amazon.com/iot/home#/test">AWS IoT Core MQTT test client</a>, in the region of your choice.</li>
+            <li>Click <em>Publish to a topic</em> and send an arbitrary message to the topic configured in this demo (by default, <code>my/topic</code>).</li>
+            <li>The message should appear in the browser console.</li>
+        </ol>
+        <script src="bundle.js"></script>
+    </body>
+</html>
